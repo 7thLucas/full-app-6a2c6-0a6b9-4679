@@ -1,0 +1,79 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <div class="w-6 h-1 rounded-full bg-teal-600"></div>
+          <span class="text-teal-600 text-xs font-semibold uppercase tracking-widest">North Star Metric</span>
+        </div>
+        <h2 class="text-3xl font-black text-slate-900">Weekly Verified Operations</h2>
+        <p class="text-slate-500 text-sm mt-1">The number this pharmacy lives or dies by</p>
+      </div>
+      <span class="px-3 py-1.5 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold whitespace-nowrap">Projected impact — based on your inputs</span>
+    </div>
+
+    <!-- Two verified operations -->
+    <div class="grid grid-cols-2 gap-4 mb-4">
+
+      <!-- Op 1: Expiry Checks -->
+      <div class="rounded-2xl bg-teal-700 p-5">
+        <span class="text-teal-300 text-xs font-semibold uppercase tracking-widest">Operation 1</span>
+        <h3 class="text-white font-bold text-base mt-1 mb-2">Expiry Checks Actioned</h3>
+        <p class="text-teal-100 text-xs leading-relaxed mb-4">A drug expiry alert is reviewed and actioned in the app — stock removed, flagged for return, or cleared as safe.</p>
+        <div class="bg-teal-600 rounded-xl p-3">
+          <div class="flex items-center gap-2 flex-wrap mb-1">
+            <span class="bg-amber-200 text-amber-900 text-xs font-bold px-2 py-0.5 rounded">Assumption — adjust this</span>
+          </div>
+          <p class="text-teal-100 text-xs">3 staff × 5 expiry checks each per week</p>
+          <p class="text-white font-bold text-lg mt-1">= <span class="text-amber-300">15 ops / week</span></p>
+        </div>
+      </div>
+
+      <!-- Op 2: Prescriptions Verified -->
+      <div class="rounded-2xl bg-slate-800 p-5">
+        <span class="text-slate-400 text-xs font-semibold uppercase tracking-widest">Operation 2</span>
+        <h3 class="text-white font-bold text-base mt-1 mb-2">Prescriptions Verified</h3>
+        <p class="text-slate-300 text-xs leading-relaxed mb-4">A prescription is created in the app, linked to the correct patient and drug, and confirmed as accurate before dispensing.</p>
+        <div class="bg-slate-700 rounded-xl p-3">
+          <div class="flex items-center gap-2 flex-wrap mb-1">
+            <span class="bg-amber-200 text-amber-900 text-xs font-bold px-2 py-0.5 rounded">Assumption — adjust this</span>
+          </div>
+          <p class="text-slate-300 text-xs">30 prescriptions/day × 5 working days</p>
+          <p class="text-white font-bold text-lg mt-1">= <span class="text-amber-300">150 ops / week</span></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Totals row -->
+    <div class="grid grid-cols-3 gap-4">
+
+      <!-- Total WVO -->
+      <div class="rounded-2xl bg-slate-100 p-5 flex flex-col justify-center">
+        <span class="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-1">Total WVO</span>
+        <p class="text-4xl font-black text-slate-900">165</p>
+        <p class="text-slate-500 text-xs mt-1">verified ops / week (15 + 150)</p>
+        <span class="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded mt-2 w-fit">Assumption — adjust this</span>
+      </div>
+
+      <!-- Value / week -->
+      <div class="rounded-2xl bg-teal-50 border border-teal-200 p-5 flex flex-col justify-center">
+        <span class="text-teal-600 text-xs font-semibold uppercase tracking-widest mb-1">Value / Week</span>
+        <p class="text-3xl font-black text-teal-800">~3.4 hrs</p>
+        <p class="text-teal-600 text-xs mt-1 leading-relaxed">165 ops × 1.25 min saved each ÷ 60 = ~3.4 hrs of staff time reclaimed</p>
+        <span class="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-0.5 rounded mt-2 w-fit">Assumption — adjust this</span>
+      </div>
+
+      <!-- Annual value -->
+      <div class="rounded-2xl bg-teal-700 p-5 flex flex-col justify-center">
+        <span class="text-teal-200 text-xs font-semibold uppercase tracking-widest mb-1">Annual Value</span>
+        <p class="text-3xl font-black text-white">176 hrs</p>
+        <p class="text-teal-100 text-xs mt-1 leading-relaxed">3.4 hrs/wk × 52 weeks — plus avoided waste losses and reduced compliance risk</p>
+        <span class="bg-amber-200 text-amber-900 text-xs font-bold px-2 py-0.5 rounded mt-2 w-fit">Assumption — adjust this</span>
+      </div>
+
+    </div>
+  </div>
+</section>
