@@ -1,0 +1,78 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-problem { width: 50%; }
+  .mode-portrait .sl-problem { width: 100%; }
+  .mode-landscape .sl-solution { width: 50%; }
+  .mode-portrait .sl-solution { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: The Problem -->
+    <div class="sl-problem flex flex-col justify-center p-12 bg-slate-50">
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-1.5 h-7 rounded-full bg-red-500"></div>
+        <span class="text-red-600 text-xs font-bold uppercase tracking-widest">The Problem</span>
+      </div>
+      <h2 class="text-3xl font-black text-slate-900 leading-tight mb-8">Pharmacies lose money and trust every day</h2>
+      <div class="flex flex-col gap-4">
+        <div class="bg-white rounded-2xl p-5 border border-red-100 shadow-sm">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl mt-0.5">💊</span>
+            <div>
+              <h3 class="font-bold text-slate-800 mb-1">Expired Stock Goes Unnoticed</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Drugs pass their expiry date without detection — driving financial losses, patient safety risks, and regulatory violations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-red-100 shadow-sm">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl mt-0.5">📋</span>
+            <div>
+              <h3 class="font-bold text-slate-800 mb-1">Prescription Records Are Fragmented</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">Manual logs and disconnected systems leave prescription errors unchecked — creating liability exposure and risking patient harm.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: The Solution -->
+    <div class="sl-solution flex flex-col justify-center p-12 bg-teal-700">
+      <div class="flex items-center gap-2 mb-6">
+        <div class="w-1.5 h-7 rounded-full bg-white"></div>
+        <span class="text-teal-100 text-xs font-bold uppercase tracking-widest">The Solution</span>
+      </div>
+      <h2 class="text-3xl font-black text-white leading-tight mb-5">One app. Full visibility. Total control.</h2>
+      <p class="text-teal-100 leading-relaxed mb-8 text-sm">A purpose-built pharmacy management platform that brings inventory, expiry tracking, and prescription records into a single, accurate, always-current view.</p>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="text-white text-xs font-bold">✓</span>
+          </div>
+          <p class="text-white text-sm leading-relaxed">Real-time expiry alerts — act before stock becomes a loss</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="text-white text-xs font-bold">✓</span>
+          </div>
+          <p class="text-white text-sm leading-relaxed">Accurate prescription records — searchable, linked, verified</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="text-white text-xs font-bold">✓</span>
+          </div>
+          <p class="text-white text-sm leading-relaxed">Full inventory CRUD with stock levels and reorder thresholds</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="text-white text-xs font-bold">✓</span>
+          </div>
+          <p class="text-white text-sm leading-relaxed">Compliance-ready reports for audits and regulatory review</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
