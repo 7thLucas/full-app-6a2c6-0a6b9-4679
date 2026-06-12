@@ -1,0 +1,60 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-portrait .sl-content { width: 100%; }
+  .mode-landscape .sl-visual { display: flex; width: 45%; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <!-- Top label -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-1 rounded-full bg-teal-600"></div>
+        <span class="text-teal-600 text-xs font-semibold uppercase tracking-widest">Pharmacy Management</span>
+      </div>
+
+      <!-- Headline + tagline -->
+      <div class="flex flex-col gap-5">
+        <h1 class="text-5xl font-black text-slate-900 leading-tight">
+          Zero Expired Stock.<br/>Zero Prescription Errors.
+        </h1>
+        <p class="text-lg text-slate-500 leading-relaxed max-w-sm">
+          The all-in-one management app that keeps your shelves safe, your records accurate, and your pharmacy compliant — every single day.
+        </p>
+        <!-- Feature pills -->
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold border border-teal-200">Drug Inventory</span>
+          <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold border border-teal-200">Expiry Tracking</span>
+          <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-semibold border border-teal-200">Prescription Records</span>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-visual relative overflow-hidden bg-slate-100">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern%20organized%20pharmacy%20interior%2C%20clean%20shelves%20with%20labeled%20medicines%2C%20teal%20and%20white%20color%20palette%2C%20professional%20editorial%20photography%2C%20soft%20lighting"
+        alt="Pharmacy interior"
+        class="w-full h-full object-cover"
+      />
+      <!-- Left fade to white -->
+      <div class="absolute inset-0" style="background: linear-gradient(to right, white 0%, transparent 30%);"></div>
+      <!-- Floating stat card -->
+      <div class="absolute bottom-10 right-8 bg-white rounded-2xl shadow-xl p-5 w-44">
+        <p class="text-xs text-slate-400 uppercase tracking-wide mb-1">Expiry Watch</p>
+        <p class="text-2xl font-black text-teal-700">Active</p>
+        <p class="text-xs text-slate-400 mt-1">Real-time alerts on</p>
+      </div>
+    </div>
+
+  </div>
+</section>
